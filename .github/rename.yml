@@ -1,0 +1,14 @@
+name: Rename swipl-wasm PRs
+
+on:
+  pull_request_target:
+
+jobs:
+  automerge:
+    name: Rename swipl-wasm PRs
+    runs-on: ubuntu-latest
+    if: ! startsWith(github.ref, 'dependabot/npm_and_yarn/swipl-wasm-')
+    steps:
+      run: e = ${{ github.event.pull_request.title }}
+      
+      chore(deps): bump swipl-wasm from 3.2.2 to 3.3.0"
