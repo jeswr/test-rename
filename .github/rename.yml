@@ -3,6 +3,7 @@ name: Rename swipl-wasm PRs
 on:
   pull_request_target:
 
+
 jobs:
   automerge:
     name: Rename swipl-wasm PRs
